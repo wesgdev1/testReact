@@ -6,7 +6,14 @@ export const NavBar = () => {
       <h1>Hola mundo</h1>
       <p>Este es el Bootcamp de programacion</p>
       <hr />
-      <Link to="/">Inicio</Link> |||||<Link to="/info">Info</Link> |
+      <div className={styles.links}>
+        <Link className={styles.link} to="/">
+          Inicio
+        </Link>
+        <Link className={styles.link} to="/info">
+          Info
+        </Link>
+      </div>
     </div>
   );
 };

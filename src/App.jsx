@@ -6,6 +6,8 @@ import { NavBar } from "./components/NavBar";
 import { Students } from "./components/Students";
 import { Info } from "./components/Info";
 
+import { Contador } from "./components/Contador";
+
 function App() {
   return (
     <>
@@ -13,8 +15,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Students />} />
         <Route path="/info" element={<Info />} />
+
         <Route path="/*" element={<Students />} />
       </Routes>
+
+      <section>
+        <Contador />
+      </section>
     </>
   );
 }
