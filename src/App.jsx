@@ -7,6 +7,7 @@ import { Students } from "./components/Students";
 import { Info } from "./components/Info";
 
 import { Contador } from "./components/Contador";
+import { Todo } from "./components/Todo";
 
 function App() {
   return (
@@ -15,13 +16,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Students />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/tareas" element={<Todo />} />
 
         <Route path="/*" element={<Students />} />
       </Routes>
 
-      <section>
+      {/* <section>
         <Contador />
-      </section>
+      </section> */}
     </>
   );
 }

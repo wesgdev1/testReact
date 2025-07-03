@@ -13,6 +13,9 @@ export const NavBar = () => {
         <Link className={styles.link} to="/info">
           Info
         </Link>
+        <Link className={styles.link} to="/tareas">
+          Tareas
+        </Link>
       </div>
     </div>
   );
